@@ -14,7 +14,7 @@ import java.util.Date;
 @TableName("article")
 public class Article {
     /** 文章ID **/
-    @TableId(value = "article_id",type= IdType.AUTO)
+    @TableId(value = "article_id", type= IdType.AUTO)
     private Long articleId;
 
     /** 文章标题 **/

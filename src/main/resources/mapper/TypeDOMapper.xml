@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ellsom.bbs.Mapper.TypeDOMapper">
+
+    <resultMap id="DqTypeResult" type="com.ellsom.bbs.pojo.domaino.TypeDO">
+        <id property="typeId" column="type_id" jdbcType="BIGINT"/>
+        <result property="typeName" column="type_name" jdbcType="VARCHAR"/>
+        <result property="typeImage" column="type_image" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="CHAR"/>
+        <result property="createManId" column="create_mainid" jdbcType="BIGINT"/>
+        <result property="updateManId" column="update_manId" jdbcType="BIGINT"/>
+        <result property="introduce" column="introduce" jdbcType="VARCHAR"/>
+        <result property="articleNum" column="article_num" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="selectTypeDO">
+        select *, (select count(*) from article where article.type_id = type.type_id) as article_num
+        from type
+    </sql>
+
+    <select id="selectAllTypeDO"
+            parameterType="com.ellsom.bbs.pojo.domaino.TypeDO"
+            resultMap="DqTypeResult">
+        <include refid="selectTypeDO"></include>
+        <where>
+            status = 0
+            <if test="typeDO.typeId != null and typeDO.typeId != ''">
+                AND type_id = #{typeDO.typeId}
+            </if>
+            <if test="typeDO.typeName != null and typeDO.typeName != ''">
+                AND type_name like concat('%',#{typeDO.typeName},'%')
+            </if>
+            <if test="typeDO.createManId != null and typeDO.createManId != ''">
+                AND create_manid = #{typeDO.createManId}
+            </if>
+            <if test="typeDO.updateManId != null and typeDO.updateManId != ''">
+                AND update_manid = #{typeDO.updateManId}
+            </if>
+            <if test="typeDO.introduce != null and typeDO.introduce != ''">
+                AND introduce like concat ('%',#{typeDO.introduce},'%')
+            </if>
+            <if test="typeDO.createTime != null and typeDO.createTime != ''">
+                AND data_format(create_time,'%y%m%d') >= data_format(#{typeDO.createTime},'%y%m%d')
+            </if>
+            <if test="typeDO.updateTime != null and typeDO.updateTime != ''">
+                AND data_format(update_time,'%y%m%d') >= data_format(#{typeDO.updateTime},'%y%m%d')
+            </if>
+        </where>
+    </select>
+</mapper>

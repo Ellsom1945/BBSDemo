@@ -41,7 +41,7 @@ public class ITypeServiceImpl implements ITypeService {
     }
 
     @Override
-    public List<TypeDO> selectDqTypeDOs(int pageNum, int pageSize, TypeDO typeDO) {
+    public List<TypeDO> selectAllTypeDOs(int pageNum, int pageSize, TypeDO typeDO) {
         PageHelper.startPage(pageNum, pageSize);
         List<TypeDO> typeDOs = typeDOMapper.selectAllTypeDO(typeDO);
         return typeDOs;

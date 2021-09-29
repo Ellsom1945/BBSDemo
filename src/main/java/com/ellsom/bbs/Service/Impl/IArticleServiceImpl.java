@@ -2,10 +2,7 @@ package com.ellsom.bbs.Service.Impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.ellsom.bbs.Mapper.ArticleDOMapper;
-import com.ellsom.bbs.Mapper.ArticleMapper;
-import com.ellsom.bbs.Mapper.TypeMapper;
-import com.ellsom.bbs.Mapper.UserMapper;
+import com.ellsom.bbs.Mapper.*;
 import com.ellsom.bbs.Service.IArticleService;
 import com.ellsom.bbs.Service.IUserService;
 import com.ellsom.bbs.pojo.domaino.ArticleDO;
@@ -29,6 +26,8 @@ public class IArticleServiceImpl implements IArticleService {
     private UserMapper usermapper;
     @Autowired
     private TypeMapper typeMapper;
+    @Autowired
+    private ArticleTagMapper articleTagMapper;
     @Autowired
     private IUserService iUserService;
 
@@ -106,6 +105,7 @@ public class IArticleServiceImpl implements IArticleService {
 //        DqUser dqUser = idqUserService.selectDqUserById(autorId);
         Article.setAuthorUsername(user.getUserName());
         Article.setAuthorNickname(user.getNickName());
+
         int insert = articlemapper.insert(Article);
         return insert;
     }

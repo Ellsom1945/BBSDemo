@@ -1,7 +1,6 @@
 package com.ellsom.bbs.Controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
-import cn.dev33.satoken.annotation.SaCheckPermission;
 import cn.dev33.satoken.stp.StpUtil;
 import com.ellsom.bbs.Service.IArticleService;
 import com.ellsom.bbs.Service.ICommentService;
@@ -72,7 +71,6 @@ public class CommentController {
     }
 
     @SaCheckLogin
-    @SaCheckPermission(value = "user-query")
     @GetMapping("/tome")
     public AjaxResult getCommentToMe(@RequestParam(defaultValue = "1") int pageNum,
                                      @RequestParam(defaultValue = "10") int pageSize) {
@@ -82,7 +80,6 @@ public class CommentController {
     }
 
     @SaCheckLogin
-    @SaCheckPermission(value = "user-add")
     @PostMapping("/add")
     public AjaxResult addType(@RequestBody CommentVO commentVO) {
         Comment comment = new Comment();
@@ -95,7 +92,6 @@ public class CommentController {
     }
 
     @SaCheckLogin
-    @SaCheckPermission(value = "user-delete")
     @GetMapping("/remove/{dqCommentId}")
     public AjaxResult remove(@PathVariable Long dqCommentId) {
         int i = iCommentService.deleteCommentById(dqCommentId);

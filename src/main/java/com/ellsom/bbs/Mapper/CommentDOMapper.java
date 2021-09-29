@@ -8,5 +8,5 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 @Mapper
 public interface CommentDOMapper extends BaseMapper<CommentDO> {
-    public List<CommentDO> selectAllCommentDO(@Param("commentVO") CommentDO commentDO);
+    public List<CommentDO> selectAllCommentDO(@Param("commentDO") CommentDO commentDO);
 }

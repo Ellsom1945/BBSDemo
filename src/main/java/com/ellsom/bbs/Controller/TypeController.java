@@ -1,6 +1,7 @@
 package com.ellsom.bbs.Controller;
 
 import com.ellsom.bbs.Service.ITypeService;
+import com.ellsom.bbs.pojo.domaino.TypeDO;
 import com.ellsom.bbs.pojo.po.Type;
 import com.ellsom.bbs.util.AjaxResult;
 import com.github.pagehelper.PageInfo;
@@ -30,5 +31,12 @@ public class TypeController {
     public AjaxResult getInfo(@PathVariable Long dqTypeId) {
         Type dqType = iTypeService.selectTypeById(dqTypeId);
         return AjaxResult.success("查询成功", dqType);
+    }
+    @GetMapping("/superlist")
+    public AjaxResult selectDqTypePostProcesser(@RequestParam(defaultValue = "1", name = "pageNum") int pageNum,
+                                                @RequestParam(defaultValue = "10", name = "pageSize") int pageSize,
+                                                TypeDO typeDO) {
+        List<TypeDO> typeDOList = iTypeService.selectAllTypeDOs(pageNum, pageSize, typeDO);
+        return AjaxResult.success("查询成功", new PageInfo<>(typeDOList));
     }
 }

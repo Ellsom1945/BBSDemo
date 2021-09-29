@@ -5,7 +5,6 @@ import com.ellsom.bbs.util.AjaxResult;
 import com.ellsom.bbs.util.UploadUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,10 +15,7 @@ import java.util.HashMap;
 public class vController {
     @Autowired
     private IUserService iUserService;
-    @GetMapping("/personal/static/img/defaultAvatar.16a68dc4.jpg")
-    public String getAvator() {
-        return "/static/img/defaultAvatar.16a68dc4.jpg";
-    }
+
     @ResponseBody
     @PostMapping("/xiaopopan/eduoss/fileoss/upload/1413125531471233026")
     public AjaxResult setAvator(MultipartFile file){

@@ -13,6 +13,6 @@ public interface ITypeService {
 
     public List<Type> selectAllTypes(int pageNum, int pageSize, Type type) throws NoSuchFieldException, InvocationTargetException, NoSuchMethodException, IllegalAccessException;
 
-    public List<TypeDO> selectDqTypeDOs(int pageNum, int pageSize, TypeDO typeDO);
+    public List<TypeDO> selectAllTypeDOs(int pageNum, int pageSize, TypeDO typeDO);
 
 }

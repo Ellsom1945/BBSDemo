@@ -14,15 +14,21 @@ import com.ellsom.bbs.pojo.po.User;
 import com.ellsom.bbs.util.DateUtils;
 import com.ellsom.bbs.util.StringUtils;
 import com.github.pagehelper.PageHelper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 @Service
 public class ICommentServiceImpl implements ICommentService {
+
+    @Autowired
     private CommentMapper commentMapper;
+    @Autowired
     private UserMapper userMapper;
+    @Autowired
     private ArticleMapper articleMapper;
+    @Autowired
     private CommentDOMapper commentDOMapper;
 
     QueryWrapper<Comment> queryWrapper = new QueryWrapper<>();

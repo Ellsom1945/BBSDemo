@@ -1,9 +1,6 @@
 package com.ellsom.bbs.pojo.po;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +17,7 @@ public class Type implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /** 类型ID **/
-    @TableId(value = "type_id")
+    @TableId(value = "type_id",type= IdType.AUTO)
     private Long typeId;
 
     /** 类型名称 **/
