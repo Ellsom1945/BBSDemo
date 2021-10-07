@@ -56,8 +56,6 @@ public class UserController {
 
     @PostMapping("/update")
     public AjaxResult update(@RequestBody User newUser) {
-        //Assert.isTrue(StpUtil.hasRole("管理员") || StpUtil.getLoginId() == dqUserId, "只能更新自己的账号，坏东西");
-        //获取用户（后面可以从redis中获取）
 //        DqUser dqUser = iUserService.selectDqUserById(newUser.getDquserid());
         User dqUser = new User();
         //更新用户
@@ -71,7 +69,6 @@ public class UserController {
         //加密密码
         dqUser.setPassWord(newUser.getPassWord());
         dqUser.setSignature(newUser.getSignature());
-        //更新完成用户后要刷新redis缓存
         System.out.println(dqUser);
         int i = iUserService.updateUserById(dqUser);
         return AjaxResult.success("更新成功", i);

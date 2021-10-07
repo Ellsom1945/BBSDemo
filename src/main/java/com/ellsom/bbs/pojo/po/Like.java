@@ -6,13 +6,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName(value = "like")
-public class Like {
+@TableName(value = "like_table")
+public class Like implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @TableId(value = "like_id", type = IdType.AUTO)
     private Long likeId;
     /**

@@ -22,7 +22,7 @@ public class SaTokenConfigure implements WebMvcConfigurer {
     @Bean(name = "SaTokenConfigure")
     public SaTokenConfig getSaTokenConfig() {
         SaTokenConfig config = new SaTokenConfig();
-        config.setTokenName("MaoyanToken");
+        config.setTokenName("EllsomToken");
         config.setTimeout(-1);
         config.setActivityTimeout(-1);
         config.setAllowConcurrentLogin(true);
