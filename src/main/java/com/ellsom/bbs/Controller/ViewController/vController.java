@@ -1,4 +1,4 @@
-package com.ellsom.bbs.Controller.viewController;
+package com.ellsom.bbs.Controller.ViewController;
 
 import com.ellsom.bbs.Service.IUserService;
 import com.ellsom.bbs.Util.AjaxResult;
