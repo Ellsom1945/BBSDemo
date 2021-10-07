@@ -1,6 +1,6 @@
 package com.ellsom.bbs.Service;
 
-import com.ellsom.bbs.pojo.po.Tag;
+import com.ellsom.bbs.Pojo.Po.Tag;
 
 import java.util.List;
 

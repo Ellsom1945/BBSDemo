@@ -1,4 +1,4 @@
-package com.ellsom.bbs.pojo.domaino;
+package com.ellsom.bbs.Pojo.Dmo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

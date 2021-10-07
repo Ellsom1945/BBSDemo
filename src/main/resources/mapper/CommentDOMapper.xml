@@ -3,7 +3,7 @@
 <mapper namespace="com.ellsom.bbs.Mapper.CommentDOMapper">
 
     <resultMap id="DqCommentResult"
-               type="com.ellsom.bbs.pojo.domaino.CommentDO">
+               type="com.ellsom.bbs.Pojo.Dmo.CommentDO">
         <id property="commentId" column="comment_id" jdbcType="BIGINT"/>
         <result property="articleId" column="article_id" jdbcType="BIGINT"/>
         <result property="content" column="content" jdbcType="VARCHAR"/>
@@ -50,7 +50,7 @@
     </sql>
 
     <select id="selectAllCommentDO"
-            parameterType="com.ellsom.bbs.pojo.domaino.CommentDO"
+            parameterType="com.ellsom.bbs.Pojo.Dmo.CommentDO"
             resultMap="DqCommentResult">
         <include refid="selectCommentDO"></include>
         <where>

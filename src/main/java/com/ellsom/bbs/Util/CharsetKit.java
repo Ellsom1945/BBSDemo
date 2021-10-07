@@ -1,4 +1,4 @@
-package com.ellsom.bbs.util;
+package com.ellsom.bbs.Util;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;

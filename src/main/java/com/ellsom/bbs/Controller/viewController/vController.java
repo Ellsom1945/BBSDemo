@@ -1,8 +1,8 @@
 package com.ellsom.bbs.Controller.viewController;
 
 import com.ellsom.bbs.Service.IUserService;
-import com.ellsom.bbs.util.AjaxResult;
-import com.ellsom.bbs.util.UploadUtil;
+import com.ellsom.bbs.Util.AjaxResult;
+import com.ellsom.bbs.Util.UploadUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.ellsom.bbs.util;
+package com.ellsom.bbs.Util;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
 

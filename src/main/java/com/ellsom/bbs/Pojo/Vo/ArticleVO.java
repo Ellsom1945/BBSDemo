@@ -1,4 +1,4 @@
-package com.ellsom.bbs.pojo.vo;
+package com.ellsom.bbs.Pojo.Vo;
 
 import com.sun.istack.internal.NotNull;
 import lombok.AllArgsConstructor;

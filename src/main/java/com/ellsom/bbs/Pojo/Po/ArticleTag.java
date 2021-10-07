@@ -1,4 +1,4 @@
-package com.ellsom.bbs.pojo.po;
+package com.ellsom.bbs.Pojo.Po;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;

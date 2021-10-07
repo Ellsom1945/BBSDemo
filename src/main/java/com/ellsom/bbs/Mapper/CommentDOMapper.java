@@ -1,7 +1,7 @@
 package com.ellsom.bbs.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ellsom.bbs.pojo.domaino.CommentDO;
+import com.ellsom.bbs.Pojo.Dmo.CommentDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

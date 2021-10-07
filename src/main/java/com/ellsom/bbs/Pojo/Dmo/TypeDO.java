@@ -1,6 +1,7 @@
-package com.ellsom.bbs.pojo.po;
+package com.ellsom.bbs.Pojo.Dmo;
 
-import com.baomidou.mybatisplus.annotation.*;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,12 +13,11 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName(value = "type")
-public class Type implements Serializable {
+public class TypeDO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /** 类型ID **/
-    @TableId(value = "type_id",type= IdType.AUTO)
+    @TableId(value = "type_id")
     private Long typeId;
 
     /** 类型名称 **/
@@ -44,13 +44,14 @@ public class Type implements Serializable {
     @TableField(value = "introduce")
     private String introduce;
 
+    /** 所属文章的数量 **/
+    private int articleNum;
+
     /** 创建时间 */
-    @TableField(fill = FieldFill.INSERT)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
 
     /** 更新时间 */
-    @TableField(fill = FieldFill.INSERT_UPDATE)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
 }

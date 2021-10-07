@@ -1,4 +1,4 @@
-package com.ellsom.bbs.hadler;
+package com.ellsom.bbs.Handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;

@@ -1,7 +1,7 @@
 package com.ellsom.bbs.Service;
 
-import com.ellsom.bbs.pojo.domaino.ArticleDO;
-import com.ellsom.bbs.pojo.po.Article;
+import com.ellsom.bbs.Pojo.Dmo.ArticleDO;
+import com.ellsom.bbs.Pojo.Po.Article;
 
 import java.util.List;
 

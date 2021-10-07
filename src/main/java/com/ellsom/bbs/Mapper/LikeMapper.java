@@ -1,7 +1,7 @@
 package com.ellsom.bbs.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ellsom.bbs.pojo.po.Like;
+import com.ellsom.bbs.Pojo.Po.Like;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

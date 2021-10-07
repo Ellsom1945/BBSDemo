@@ -1,4 +1,4 @@
-package com.ellsom.bbs.util;
+package com.ellsom.bbs.Util;
 
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.text.NumberFormat;
 import java.util.Set;
-import com.ellsom.bbs.util.StringUtils;
+
 /**
  * 类型转换器
  *

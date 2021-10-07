@@ -1,7 +1,7 @@
 package com.ellsom.bbs.Service;
 
-import com.ellsom.bbs.pojo.domaino.CommentDO;
-import com.ellsom.bbs.pojo.po.Comment;
+import com.ellsom.bbs.Pojo.Dmo.CommentDO;
+import com.ellsom.bbs.Pojo.Po.Comment;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;

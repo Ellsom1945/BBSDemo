@@ -1,8 +1,8 @@
-package com.ellsom.bbs.pojo.domaino;
+package com.ellsom.bbs.Pojo.Dmo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.ellsom.bbs.pojo.po.Tag;
+import com.ellsom.bbs.Pojo.Po.Tag;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;

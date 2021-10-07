@@ -6,9 +6,9 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ellsom.bbs.Mapper.UserMapper;
 import com.ellsom.bbs.Service.IUserService;
-import com.ellsom.bbs.util.DateUtils;
-import com.ellsom.bbs.util.StringUtils;
-import com.ellsom.bbs.pojo.po.User;
+import com.ellsom.bbs.Util.DateUtils;
+import com.ellsom.bbs.Util.StringUtils;
+import com.ellsom.bbs.Pojo.Po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -2,10 +2,10 @@ package com.ellsom.bbs.Controller;
 
 import cn.dev33.satoken.secure.SaSecureUtil;
 import com.ellsom.bbs.Service.IUserService;
-import com.ellsom.bbs.util.AjaxResult;
-import com.ellsom.bbs.util.DateUtils;
-import com.ellsom.bbs.pojo.vo.RegisterVO;
-import com.ellsom.bbs.pojo.po.User;
+import com.ellsom.bbs.Util.AjaxResult;
+import com.ellsom.bbs.Util.DateUtils;
+import com.ellsom.bbs.Pojo.Vo.RegisterVO;
+import com.ellsom.bbs.Pojo.Po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

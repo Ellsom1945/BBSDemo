@@ -1,4 +1,4 @@
-package com.ellsom.bbs.util;
+package com.ellsom.bbs.Util;
 
 import com.ellsom.bbs.Config.UploadConfig;
 import org.springframework.beans.factory.annotation.Autowired;

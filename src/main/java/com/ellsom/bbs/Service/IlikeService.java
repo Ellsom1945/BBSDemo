@@ -1,6 +1,6 @@
 package com.ellsom.bbs.Service;
 
-import com.ellsom.bbs.pojo.po.User;
+import com.ellsom.bbs.Pojo.Po.User;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
 package com.ellsom.bbs.Controller;
 
 import com.ellsom.bbs.Service.ITypeService;
-import com.ellsom.bbs.pojo.domaino.TypeDO;
-import com.ellsom.bbs.pojo.po.Type;
-import com.ellsom.bbs.util.AjaxResult;
+import com.ellsom.bbs.Pojo.Dmo.TypeDO;
+import com.ellsom.bbs.Pojo.Po.Type;
+import com.ellsom.bbs.Util.AjaxResult;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

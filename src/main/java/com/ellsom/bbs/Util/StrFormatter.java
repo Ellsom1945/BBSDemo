@@ -1,4 +1,4 @@
-package com.ellsom.bbs.util;
+package com.ellsom.bbs.Util;
 
 public class StrFormatter {
     public static final String EMPTY_JSON = "{}";

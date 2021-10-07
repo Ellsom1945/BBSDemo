@@ -1,7 +1,7 @@
 package com.ellsom.bbs.Service;
 
-import com.ellsom.bbs.pojo.domaino.TypeDO;
-import com.ellsom.bbs.pojo.po.Type;
+import com.ellsom.bbs.Pojo.Dmo.TypeDO;
+import com.ellsom.bbs.Pojo.Po.Type;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;

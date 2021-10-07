@@ -2,10 +2,10 @@ package com.ellsom.bbs.Controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import com.ellsom.bbs.Service.IlikeService;
-import com.ellsom.bbs.pojo.po.User;
-import com.ellsom.bbs.util.AjaxResult;
-import com.ellsom.bbs.util.HttpStatus;
-import com.ellsom.bbs.util.StringUtils;
+import com.ellsom.bbs.Pojo.Po.User;
+import com.ellsom.bbs.Util.AjaxResult;
+import com.ellsom.bbs.Util.HttpStatus;
+import com.ellsom.bbs.Util.StringUtils;
 import com.github.pagehelper.PageInfo;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;

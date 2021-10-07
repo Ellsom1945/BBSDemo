@@ -1,7 +1,7 @@
-package com.ellsom.bbs.hadler;
+package com.ellsom.bbs.Handler;
 
 import cn.dev33.satoken.exception.NotLoginException;
-import com.ellsom.bbs.util.AjaxResult;
+import com.ellsom.bbs.Util.AjaxResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
