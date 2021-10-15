@@ -41,12 +41,6 @@
             <if test="typeDO.introduce != null and typeDO.introduce != ''">
                 AND introduce like concat ('%',#{typeDO.introduce},'%')
             </if>
-            <if test="typeDO.createTime != null and typeDO.createTime != ''">
-                AND data_format(create_time,'%y%m%d') >= data_format(#{typeDO.createTime},'%y%m%d')
-            </if>
-            <if test="typeDO.updateTime != null and typeDO.updateTime != ''">
-                AND data_format(update_time,'%y%m%d') >= data_format(#{typeDO.updateTime},'%y%m%d')
-            </if>
         </where>
     </select>
 </mapper>

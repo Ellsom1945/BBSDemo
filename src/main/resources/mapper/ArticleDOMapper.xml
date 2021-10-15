@@ -75,12 +75,6 @@
             <if test="articleDO.authorUsername != null and articleDO.authorUsername != ''">
                 AND author_username like concat('%',#{articleDO.authorUsername},'%')
             </if>
-            <if test="articleDO.createTime != null and articleDO.createTime != ''">
-                AND data_format(create_time,'%y%m%d') >= data_format(#{articleDO.createTime},'%y%m%d')
-            </if>
-            <if test="articleDO.updateTime != null and articleDO.updateTime != ''">
-                AND data_format(update_time,'%y%m%d') >= data_format(#{articleDO.updateTime},'%y%m%d')
-            </if>
             <if test="true">
                 order by article.article_id desc
             </if>
